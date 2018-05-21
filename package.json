@@ -1,0 +1,41 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server dist",
+    "dev": "set NODE_ENV=development && webpack-dev-server --env.NODE_ENV=development --mode development --open --config webpack.dev.js",
+    "build": "set NODE_ENV=production && webpack --env.NODE_ENV=production --mode production --progress --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-es2015": "^7.0.0-beta.47",
+    "@babel/preset-react": "^7.0.0-beta.47",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3",
+    "webpack-merge": "^4.1.2",
+    "workbox-webpack-plugin": "^3.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}

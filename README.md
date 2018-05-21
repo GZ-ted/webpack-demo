@@ -1,1 +1,1 @@
-# webpack-demo
+利用webpack4，构建一个支持react，ES6，service-worker的小demo。
